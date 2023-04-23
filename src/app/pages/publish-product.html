@@ -1,0 +1,151 @@
+<!-- publish product -->
+<div
+	class="view tab-pane fade show active"
+	id="add-product"
+	role="tabpanel"
+	aria-labelledby="home-tab"
+>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="card">
+				<div class="card-body">
+					<div id="addproduct-nav-pills-wizard" class="twitter-bs-wizard">
+						<h4 class="card-title">Crear publicación</h4>
+						<form>
+							<div class="mb-3"></div>
+							<h4 class="card-title">Categorias publicación</h4>
+							<p class="card-title-desc">
+								Arrastra o haz doble click para añadir una categoria
+							</p>
+							<div class="row h-25 dx-viewport">
+								<div class="col-md-6">
+									<div class="mb-3">
+										<label class="form-label" class="control-label">Post</label>
+										<ul
+											id="product-categories"
+											class="connectedSortable list-group list-connect ps-2"
+										>
+											<li class="ui-state-highlight w-auto">cat 1</li>
+											<li class="ui-state-highlight w-auto">cat 2</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="mb-3">
+										<label class="form-label" class="control-label"
+											>Categorias del producto</label
+										>
+										<ul
+											id="categories"
+											class="connectedSortable list-group list-connect ps-2"
+										>
+											<li class="ui-state-highlight w-auto">cat 3</li>
+											<li class="ui-state-highlight w-auto">cat 4</li>
+											<li class="ui-state-highlight w-auto">cat 5</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</form>
+						<hr />
+						<h4 class="card-title">Producto imagenes</h4>
+						<p class="card-title-desc">Subir fotos</p>
+						<form class="dropzone">
+							<div class="fallback">
+								<input name="file" type="file" multiple />
+							</div>
+
+							<div class="dz-message needsclick">
+								<div class="mb-3">
+									<i class="display-4 text-muted ri-upload-cloud-2-line"></i>
+								</div>
+
+								<h4>Arrastra aqui los archivos</h4>
+							</div>
+						</form>
+						<hr />
+						<h4 class="card-title">Información basica</h4>
+						<p class="card-title-desc">Llena todos los campos</p>
+						<form>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="mb-3">
+										<label class="form-label" for="metatitle">Titulo</label>
+										<input
+											id="metatitle"
+											name="metatitle"
+											type="text"
+											class="form-control"
+										/>
+									</div>
+									<div class="mb-3">
+										<label class="form-label" for="metakeywords">Precio</label>
+										<input
+											id="metakeywords"
+											name="metakeywords"
+											type="text"
+											class="form-control"
+										/>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<label class="form-label" for="metakeywords"
+										>Especificaciones</label
+									>
+									<div class="row">
+										<div class="col-8">
+											<input
+												class="form-control"
+												placeholder="Caracteristica : valor"
+												type="text"
+												id="input-spec"
+											/>
+										</div>
+										<div class="col-4">
+											<button type="button" id="add-spec" class="btn btn-dark">
+												Añadir
+											</button>
+										</div>
+									</div>
+									<ul class="list-group list-scroll pt-2" id="specs"></ul>
+								</div>
+							</div>
+							<div class="row"></div>
+							<div class="mb-3">
+								<label class="form-label" for="productdesc"
+									>Publicación descripción</label
+								>
+								<textarea
+									class="form-control"
+									id="productdesc"
+									rows="5"
+								></textarea>
+							</div>
+						</form>
+						<div class="text-center mt-4">
+							<button
+								type="submit"
+								class="btn btn-primary me-2 waves-effect waves-light"
+							>
+								Publicar
+							</button>
+							<button type="submit" class="btn btn-light waves-effect">
+								Cancelar
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end row -->
+</div>
+<!-- drag and drop connected lists -->
+<script
+	async
+	src="https://cdn3.devexpress.com/jslib/22.2.3/js/dx.all.js"
+></script>
+<script src="assets/js/drag-and-drog-lists.js"></script>
+<!-- post specs -->
+<script src="assets/js/to-do-list.js"></script>

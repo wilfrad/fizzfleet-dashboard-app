@@ -1,0 +1,162 @@
+<!-- add product -->
+<div
+	class="view tab-pane"
+	id="add-product"
+	role="tabpanel"
+	aria-labelledby="home-tab"
+>
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="card">
+				<div class="card-body">
+					<div id="addproduct-nav-pills-wizard" class="twitter-bs-wizard">
+						<h4 class="card-title">Información del producto</h4>
+						<p class="card-title-desc">Llena todos los campos</p>
+						<form>
+							<div class="mb-3">
+								<label class="form-label" for="productname"
+									>Nombre del producto</label
+								>
+								<input
+									id="productname"
+									name="productname"
+									type="text"
+									class="form-control"
+								/>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="mb-3">
+										<label class="form-label" for="manufacturerbrand"
+											>Marca</label
+										>
+										<select class="form-control">
+											<option value="" disabled selected>
+												Marcas registradas
+											</option>
+											<option value="EL">Cocacola</option>
+											<option value="FA">Dell</option>
+											<option value="FI">Haced</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="mb-3">
+										<label class="form-label" for="price"
+											>Precio (solo coma para valor decimal)</label
+										>
+										<input
+											id="price"
+											name="price"
+											type="text"
+											class="form-control"
+											placeholder="$ 00000,00"
+										/>
+									</div>
+								</div>
+							</div>
+							<h4 class="card-title">Categorias</h4>
+							<p class="card-title-desc">
+								Arrastra o haz doble click para añadir una categoria
+							</p>
+							<div class="row h-25 dx-viewport">
+								<div class="col-md-6">
+									<div class="mb-3">
+										<label class="form-label" class="control-label"
+											>Categorias del producto</label
+										>
+										<ul
+											id="product-categories"
+											class="connectedSortable list-group list-connect ps-2"
+										>
+											<li class="ui-state-highlight w-auto">cat 1</li>
+											<li class="ui-state-highlight w-auto">cat 2</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="mb-3">
+										<label class="form-label" class="control-label"
+											>Todas las categorias</label
+										>
+										<ul
+											id="categories"
+											class="connectedSortable list-group list-connect ps-2"
+										>
+											<li class="ui-state-highlight w-auto">cat 3</li>
+											<li class="ui-state-highlight w-auto">cat 4</li>
+											<li class="ui-state-highlight w-auto">cat 5</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<h4 class="card-title">Ubicación fisica</h4>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="mb-3">
+										<label class="form-label" class="control-label"
+											>Bodega</label
+										>
+										<select class="form-control select2">
+											<option>Seleccionar bodega</option>
+											<option value="EL">Sur</option>
+											<option value="FA">Norte 1</option>
+											<option value="FI">Norte 2</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="mb-3">
+										<label class="form-label" class="control-label"
+											>Almacen</label
+										>
+										<select class="form-control select2">
+											<option>Seleccionar almacen</option>
+											<option value="EL">Superior</option>
+											<option value="FA">Inferior</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="mb-3">
+								<label class="form-label" for="productdesc"
+									>Descripción de producto</label
+								>
+								<textarea
+									class="form-control"
+									id="productdesc"
+									rows="5"
+								></textarea>
+							</div>
+							<hr />
+							<h4 class="card-title">Producto imagen</h4>
+							<form class="dropzone">
+								<div class="fallback">
+									<input name="file" type="file" />
+								</div>
+							</form>
+						</form>
+						<div class="text-center mt-4">
+							<button
+								type="submit"
+								class="btn btn-primary me-2 waves-effect waves-light"
+							>
+								Guardar cambios
+							</button>
+							<button type="submit" class="btn btn-light waves-effect">
+								Cancelar
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end row -->
+</div>
+<!-- drag and drop connected lists -->
+<script
+	async
+	src="https://cdn3.devexpress.com/jslib/22.2.3/js/dx.all.js"
+></script>
+<script async src="assets/js/drag-and-drog-lists.js"></script>

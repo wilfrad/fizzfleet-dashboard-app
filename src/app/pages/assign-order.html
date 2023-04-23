@@ -1,0 +1,399 @@
+<!-- assign order -->
+<div
+class="view tab-pane fade"
+id="assign-order"
+role="tabpanel"
+aria-labelledby="assign-order-tab"
+>
+<div class="row">
+    <div class="col-xl-6">
+        <!-- orders list -->
+        <div class="card">
+            <div class="card-body">
+                
+            </div>
+        </div>
+    </div>
+    <!-- top categories -->
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end row -->
+
+<div class="row">
+    <!-- recent products -->
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title mb-3">
+                    Productos recien agregados
+                </h4>
+
+                <div>
+                    <div class="text-center">
+                        <p class="mb-2">Total productos</p>
+                        <h4>52</h4>
+                    </div>
+
+                    <div class="table-responsive mt-4">
+                        <table
+                            class="table table-hover mb-0 table-centered table-nowrap"
+                        >
+                            <tbody>
+                                <tr>
+                                    <td style="width: 60px">
+                                        <div class="avatar-xs">
+                                            <div
+                                                class="avatar-title rounded-circle bg-light"
+                                            >
+                                                <img
+                                                    src="assets/images/companies/img-1.png"
+                                                    alt="img-1"
+                                                    height="20"
+                                                />
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <h5 class="font-size-14 mb-0">Source 1</h5>
+                                    </td>
+                                    <td><div id="spak-chart1"></div></td>
+                                    <td>
+                                        <p class="text-muted mb-0">$ 2478</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="avatar-xs">
+                                            <div
+                                                class="avatar-title rounded-circle bg-light"
+                                            >
+                                                <img
+                                                    src="assets/images/companies/img-2.png"
+                                                    alt="img-2"
+                                                    height="20"
+                                                />
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h5 class="font-size-14 mb-0">Source 2</h5>
+                                    </td>
+
+                                    <td><div id="spak-chart2"></div></td>
+                                    <td>
+                                        <p class="text-muted mb-0">$ 2625</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="avatar-xs">
+                                            <div
+                                                class="avatar-title rounded-circle bg-light"
+                                            >
+                                                <img
+                                                    src="assets/images/companies/img-3.png"
+                                                    alt="img-3"
+                                                    height="20"
+                                                />
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h5 class="font-size-14 mb-0">Source 3</h5>
+                                    </td>
+                                    <td><div id="spak-chart3"></div></td>
+                                    <td>
+                                        <p class="text-muted mb-0">$ 2856</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <a href="#" class="btn btn-primary btn-sm"
+                            >Ver productos</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- lasted transactions -->
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title mb-4">Transacciones recientes</h4>
+
+                <div class="table-responsive">
+                    <table
+                        class="table table-centered datatable dt-responsive nowrap"
+                        data-bs-page-length="5"
+                        style="
+                            border-collapse: collapse;
+                            border-spacing: 0;
+                            width: 100%;
+                        "
+                    >
+                        <thead class="table-light">
+                            <tr>
+                                <th style="width: 20px">
+                                    <div class="form-check">
+                                        <input
+                                            type="checkbox"
+                                            class="form-check-input"
+                                            id="ordercheck"
+                                        />
+                                        <label
+                                            class="form-check-label mb-0"
+                                            for="ordercheck"
+                                            >&nbsp;</label
+                                        >
+                                    </div>
+                                </th>
+                                <th>Order ID</th>
+                                <th>Date</th>
+                                <th>Billing Name</th>
+                                <th>Total</th>
+                                <th>Payment Status</th>
+                                <th style="width: 120px">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input
+                                            type="checkbox"
+                                            class="form-check-input"
+                                            id="ordercheck1"
+                                        />
+                                        <label
+                                            class="form-check-label mb-0"
+                                            for="ordercheck1"
+                                            >&nbsp;</label
+                                        >
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <a
+                                        href="javascript: void(0);"
+                                        class="text-dark fw-bold"
+                                        >#NZ1572</a
+                                    >
+                                </td>
+                                <td>04 Apr, 2020</td>
+                                <td>Walter Brown</td>
+
+                                <td>$172</td>
+                                <td>
+                                    <div
+                                        class="badge badge-soft-success font-size-12"
+                                    >
+                                        Paid
+                                    </div>
+                                </td>
+                                <td id="tooltip-container1">
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="me-3 text-primary"
+                                        data-bs-container="#tooltip-container1"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title="Edit"
+                                        ><i class="mdi mdi-pencil font-size-18"></i
+                                    ></a>
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="text-danger"
+                                        data-bs-container="#tooltip-container1"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title="Delete"
+                                        ><i class="mdi mdi-trash-can font-size-18"></i
+                                    ></a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input
+                                            type="checkbox"
+                                            class="form-check-input"
+                                            id="ordercheck8"
+                                        />
+                                        <label
+                                            class="form-check-label mb-0"
+                                            for="ordercheck8"
+                                            >&nbsp;</label
+                                        >
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <a
+                                        href="javascript: void(0);"
+                                        class="text-dark fw-bold"
+                                        >#NZ1565</a
+                                    >
+                                </td>
+                                <td>29 Mar, 2020</td>
+                                <td>Jamison Clark</td>
+
+                                <td>$123</td>
+                                <td>
+                                    <div
+                                        class="badge badge-soft-success font-size-12"
+                                    >
+                                        Paid
+                                    </div>
+                                </td>
+                                <td id="tooltip-container7">
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="me-3 text-primary"
+                                        data-bs-container="#tooltip-container7"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title="Edit"
+                                        ><i class="mdi mdi-pencil font-size-18"></i
+                                    ></a>
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="text-danger"
+                                        data-bs-container="#tooltip-container7"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title="Delete"
+                                        ><i class="mdi mdi-trash-can font-size-18"></i
+                                    ></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input
+                                            type="checkbox"
+                                            class="form-check-input"
+                                            id="ordercheck9"
+                                        />
+                                        <label
+                                            class="form-check-label mb-0"
+                                            for="ordercheck9"
+                                            >&nbsp;</label
+                                        >
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <a
+                                        href="javascript: void(0);"
+                                        class="text-dark fw-bold"
+                                        >#NZ1564</a
+                                    >
+                                </td>
+                                <td>28 Mar, 2020</td>
+                                <td>Eddy Torres</td>
+
+                                <td>$141</td>
+                                <td>
+                                    <div
+                                        class="badge badge-soft-success font-size-12"
+                                    >
+                                        Paid
+                                    </div>
+                                </td>
+                                <td id="tooltip-container8">
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="me-3 text-primary"
+                                        data-bs-container="#tooltip-container8"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title="Edit"
+                                        ><i class="mdi mdi-pencil font-size-18"></i
+                                    ></a>
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="text-danger"
+                                        data-bs-container="#tooltip-container8"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title="Delete"
+                                        ><i class="mdi mdi-trash-can font-size-18"></i
+                                    ></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input
+                                            type="checkbox"
+                                            class="form-check-input"
+                                            id="ordercheck10"
+                                        />
+                                        <label
+                                            class="form-check-label mb-0"
+                                            for="ordercheck10"
+                                            >&nbsp;</label
+                                        >
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <a
+                                        href="javascript: void(0);"
+                                        class="text-dark fw-bold"
+                                        >#NZ1563</a
+                                    >
+                                </td>
+                                <td>28 Mar, 2020</td>
+                                <td>Frank Dean</td>
+
+                                <td>$164</td>
+                                <td>
+                                    <div
+                                        class="badge badge-soft-warning font-size-12"
+                                    >
+                                        unpaid
+                                    </div>
+                                </td>
+                                <td id="tooltip-container9">
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="me-3 text-primary"
+                                        data-bs-container="#tooltip-container9"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title="Edit"
+                                        ><i class="mdi mdi-pencil font-size-18"></i
+                                    ></a>
+                                    <a
+                                        href="javascript:void(0);"
+                                        class="text-danger"
+                                        data-bs-container="#tooltip-container9"
+                                        data-bs-toggle="tooltip"
+                                        data-bs-placement="top"
+                                        title="Delete"
+                                        ><i class="mdi mdi-trash-can font-size-18"></i
+                                    ></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end row -->
+</div>

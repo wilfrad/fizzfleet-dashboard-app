@@ -1,0 +1,10 @@
+.list-connect{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+	min-height: 20px;
+	list-style-type: none;
+}
+.list-scroll {
+    height: 200px;
+    overflow: auto;
+}
